@@ -24,9 +24,20 @@ use App\Livewire\Home;
 // Route::get('/', Index::class); = doesn't work
 
 Route::get('/', [PagesController::class, 'index']);
-Route::get('/login', [PagesController::class, 'login']);
+Route::get('/login', [PagesController::class, 'login'])->name('login');
+// Route::get('/register', [PagesController::class, 'register'])->name('register');
+// Route::get('/about', [PagesController::class, 'about'])->name('about');
+
+Route::get('/register', function () {
+    return view('livewire.register');
+})->name('register');
+
+Route::get('/about', function () {
+    return view('livewire.about');
+})->name('about');
+
+
 // Route::get('/', 'App\Http\Controllers\PagesController@index');
 
 // Route::get('/login', [PagesController::class, 'login']);
-// Route::get('/register', [PagesController::class, 'register']);
 // Route::get('/', [PagesController::class, 'index']);

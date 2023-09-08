@@ -14,7 +14,7 @@ class Comments extends Component
     use WithFileUploads;
     public $newComment;
 
-    public $ticketId;
+    public $ticketId = 1;
 
     protected $listeners = [
         'fileUpload'     => 'handleFileUpload',
