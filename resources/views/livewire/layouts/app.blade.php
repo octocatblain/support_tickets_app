@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>@yield('title') | Support</title>
+    <title>@yield('title')</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -22,11 +21,10 @@
     @livewireScripts()
 </head>
 
+@include('includes.navbar')
+
 <body class="antialiased">
-    @include('includes.navbar')
-
     @yield('content')
-
 </body>
 
 </html>

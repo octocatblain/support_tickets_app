@@ -4,13 +4,13 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class About extends Component
+class Abot extends Component
 {
 
-    public $title = 'live along';
+    public $title = 'About';
 
     public function render()
     {
-        return view('livewire.about');
+        return view('livewire.abot');
     }
 }

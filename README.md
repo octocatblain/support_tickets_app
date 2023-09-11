@@ -5,6 +5,14 @@
 This is a web app made using PHP Laravel Livewire, Eloquent and Bootstrap.
 It focuses on object data share, user authentication and File uploading and storage using Intervention.
 
+## Versions
+
+-   PHP version -> 8.2.0
+-   Laravel version -> 10.22.0
+-   Livewire -> 3.x
+-   Eloquent
+-   Intervention
+
 ## Contributing
 
 Thank you for considering contributing to this project. Check on the issues and use pull requests to suggest changes.

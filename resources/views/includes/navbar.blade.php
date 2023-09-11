@@ -20,8 +20,8 @@
 
             {{-- navbar right side --}}
             <ul class="navbar-nav navbar-right mr-3">
-                <li class="nav-item "><a class="nav-link text-white" wire:navigate href="/login">Login</a></li>
-                <li class="nav-item"><a class="nav-link text-white" wire:navigate href="/register">Register</a></li>
+                <li class="nav-item "><a class="nav-link text-white" wire:navigate wire:model="Login" href="/login">Login</a></li>
+                <li class="nav-item"><a class="nav-link text-white" wire:navigate wire:model="Register" href="/register">Register</a></li>
 
             </ul>
 
