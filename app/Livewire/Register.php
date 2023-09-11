@@ -7,8 +7,8 @@ use App\Models\User;
 
 class Register extends Component
 {
-    public $title = 'Register'; 
-    
+    public $title = 'Register';
+
     public $form = [
         'name'                  => '',
         'email'                 => '',
@@ -32,5 +32,10 @@ class Register extends Component
     {
 
         return view('livewire.register');
+    }
+
+    public function setPasswordAttribute($value)
+    {
+        $this->attributes['password'] = bcrypt($value);
     }
 }

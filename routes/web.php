@@ -14,7 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [PagesController::class, 'index']);
+Route::get('/', [PagesController::class, 'index'])->name('home')->middleware('auth');
+// Route::middleware(['auth', 'second'])->group(function () {
+
+// });
 Route::get('/login', [PagesController::class, 'login'])->name('login');
 Route::get('/register', [PagesController::class, 'register'])->name('register');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
