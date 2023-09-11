@@ -1,9 +1,10 @@
-@section('title')
-    {{$title}}
-@endsection
+@extends('layouts.app')
 
-<div class="d-flex justify-content-center">
-        <div class="card m-2 p-2 col-5 " style="background-color: rgba(179, 174, 174, 0.100) !important">
+@section('content')
+    <div class="d-flex justify-content-center bg-gray-100">
+
+
+        <div class="card m-2 p-2 col-5 ">
             <div>
                 <h5 class="text-center">SignUp To Get Started</h5>
             </div>
@@ -43,3 +44,4 @@
             </form>
         </div>
     </div>
+@endsection

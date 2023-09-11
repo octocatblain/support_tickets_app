@@ -1,8 +1,9 @@
-@extends('layouts.app')
+@section('title')
+    {{$title}}
+@endsection
 
-@section('content')
-    <div class="d-flex justify-content-center">
-        <div class="card m-2 p-2 col-5">
+<div class="d-flex justify-content-center ">
+        <div class="card m-2 p-2 col-5 " style="background-color: rgba(179, 174, 174, 0.100) !important">
             <div>
                 <h5 class="text-center">Login Time</h5>
             </div>
@@ -27,4 +28,3 @@
             </form>
         </div>
     </div>
-@endsection

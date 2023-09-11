@@ -7,6 +7,8 @@ use App\Models\User;
 
 class Register extends Component
 {
+    public $title = 'Register'; 
+    
     public $form = [
         'name'                  => '',
         'email'                 => '',
@@ -28,6 +30,7 @@ class Register extends Component
 
     public function render()
     {
+
         return view('livewire.register');
     }
 }

@@ -8,20 +8,22 @@ class PagesController extends Controller
 {
     public function index()
     {
-        return view('livewire.index');
+        $title = 'Home';
+
+        return view('pages.index')->with(['title' => $title]);
     }
     public function login()
     {
-        return view('livewire.login');
+        return view('pages.login');
     }
 
     public function register()
     {
-        return view('livewire.register');
+        return view('pages.register');
     }
 
     public function about()
     {
-        return view('livewire.about');
+        return view('pages.about');
     }
 }
