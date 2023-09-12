@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Ruwudu" !important;
+    src: url("resources\fonts\Ruwudu") format("ttf"),
+        /* Modern Browsers */ url("path/to/ruwudu.woff") format("woff"); /* Legacy Browsers */
+    /* Add other font formats as needed */
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+
+/* Now, you can use 'Ruwudu' as the font-family for any element in your project */
+body {
+    font-family: "Ruwudu", serif !important;
+}
+
+/* Example usage in a specific element */
+h1 {
+    font-family: "Ruwudu", serif !important;
+}
