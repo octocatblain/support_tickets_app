@@ -11,7 +11,9 @@
                 <h5>List of issues you could help me with:</h5>
 
                 <ol>
-                    <li class="list-item">1. Middleware</li>
+                    {{-- <li class="list-item text-strike ">1. Middleware
+
+                    </li> --}}
                     <li class="list-item">2. Event share in support tickets and comments</li>
                     <li class="list-item">3. Plus any suggestions you might offer</li>
 
