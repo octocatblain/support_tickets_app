@@ -25,12 +25,17 @@
     @livewireScripts()
 </head>
 
-<body class="antialiased">
+<body class="antialiased ">
     @include('includes.navbar')
 
-    @yield('content')
+    <div class="min-vh-100 ">
+        @yield('content')
+
+        @include('includes.footer')
+    </div>
+
+
 
 </body>
-@include('includes.footer')
 
 </html>
